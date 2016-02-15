@@ -1,0 +1,100 @@
+/* nagate default style */
+* {
+    padding: 0;
+    margin: 0;
+}
+ul, ol {
+    list-style: none;
+}
+html, body {
+    height: 100%;
+}
+
+/* global */
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
+    line-height: 1.42;
+    color: #CFD8DC;
+    background-color: #37474F;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* left side menu */
+#list {
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+#list ul li {
+    border-bottom: solid 1px #546E7A;
+}
+#list ul li a {
+    display: block;
+    width: 100%;
+}
+#list ul li a .inner {
+    padding: 15px 20px;
+}
+#list strong {
+    color: #ECEFF1;
+    font-weight: normal;
+    display: block;
+    padding-bottom: 5px;
+}
+#list .date {
+    font-size: 0.9em;
+    color: #B0BEC5;
+}
+#list ul li:hover {
+    background-color: #455A64;
+}
+
+
+/* right document */
+#note {
+    height: 100%;
+    margin-left: 200px;
+    border-left: solid 1px #546E7A;
+}
+#note .markdown {
+    padding: 0 20px;
+}
+.markdown h1 {
+    font-size: 1.3em;
+    padding-top: 15px;
+}
+.markdown h2 {
+    font-size: 1.2em;
+    padding-top: 40px;
+}
+.markdown h3 {
+    font-size: 1.1em;
+    padding-top: 30px;
+}
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    padding-top: 30px;
+    font-size: 1em;
+}
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #546E7A;
+}
+.markdown p {
+    padding-bottom: 10px;
+}
