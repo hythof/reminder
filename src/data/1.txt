@@ -1,0 +1,357 @@
+:format html
+:title Color code from Google Material Design
+
+<style>
+/* color-block */
+.color-block ul {
+    float: left;
+    margin: 15px 10px 50px 10px;
+    width: 200px;
+    font-size: 0.9em;
+}
+.color-block li {
+    padding: 15px 20px;
+}
+.color-block .name {
+    display: block;
+    padding-bottom: 50px;
+}
+.color-block .dark {
+    color: #000000;
+}
+.color-block .color {
+    float: right;
+}
+</style>
+
+<div class="color-block">
+  <ul>
+    <li style="background: #F44336"><span class="name">Red</span><span class="shade">500</span><span class="color">#F44336</span></li>
+    <li style="background: #FFEBEE" class="dark"><span class="shade">50</span><span class="color">#FFEBEE</span></li>
+    <li style="background: #FFCDD2" class="dark"><span class="shade">100</span><span class="color">#FFCDD2</span></li>
+    <li style="background: #EF9A9A" class="dark"><span class="shade">200</span><span class="color">#EF9A9A</span></li>
+    <li style="background: #E57373" class="dark"><span class="shade">300</span><span class="color">#E57373</span></li>
+    <li style="background: #EF5350"><span class="shade">400</span><span class="color">#EF5350</span></li>
+    <li style="background: #F44336"><span class="shade">500</span><span class="color">#F44336</span></li>
+    <li style="background: #E53935"><span class="shade">600</span><span class="color">#E53935</span></li>
+    <li style="background: #D32F2F"><span class="shade">700</span><span class="color">#D32F2F</span></li>
+    <li style="background: #C62828"><span class="shade">800</span><span class="color">#C62828</span></li>
+    <li style="background: #B71C1C"><span class="shade">900</span><span class="color">#B71C1C</span></li>
+    <li style="background: #FF8A80" class="dark"><span class="shade">A100</span><span class="color">#FF8A80</span></li>
+    <li style="background: #FF5252"><span class="shade">A200</span><span class="color">#FF5252</span></li>
+    <li style="background: #FF1744"><span class="shade">A400</span><span class="color">#FF1744</span></li>
+    <li style="background: #D50000"><span class="shade">A700</span><span class="color">#D50000</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #E91E63"><span class="name">Pink</span><span class="shade">500</span><span class="color">#E91E63</span></li>
+    <li style="background: #FCE4EC" class="dark"><span class="shade">50</span><span class="color">#FCE4EC</span></li>
+    <li style="background: #F8BBD0" class="dark"><span class="shade">100</span><span class="color">#F8BBD0</span></li>
+    <li style="background: #F48FB1" class="dark"><span class="shade">200</span><span class="color">#F48FB1</span></li>
+    <li style="background: #F06292"><span class="shade">300</span><span class="color">#F06292</span></li>
+    <li style="background: #EC407A"><span class="shade">400</span><span class="color">#EC407A</span></li>
+    <li style="background: #E91E63"><span class="shade">500</span><span class="color">#E91E63</span></li>
+    <li style="background: #D81B60"><span class="shade">600</span><span class="color">#D81B60</span></li>
+    <li style="background: #C2185B"><span class="shade">700</span><span class="color">#C2185B</span></li>
+    <li style="background: #AD1457"><span class="shade">800</span><span class="color">#AD1457</span></li>
+    <li style="background: #880E4F"><span class="shade">900</span><span class="color">#880E4F</span></li>
+    <li style="background: #FF80AB" class="dark"><span class="shade">A100</span><span class="color">#FF80AB</span></li>
+    <li style="background: #FF4081"><span class="shade">A200</span><span class="color">#FF4081</span></li>
+    <li style="background: #F50057"><span class="shade">A400</span><span class="color">#F50057</span></li>
+    <li style="background: #C51162"><span class="shade">A700</span><span class="color">#C51162</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #673AB7"><span class="name">Purple</span><span class="shade">500</span><span class="color">#9C27B0</span></li>
+    <li style="background: #F3E5F5" class="dark"><span class="shade">50</span><span class="color">#F3E5F5</span></li>
+    <li style="background: #E1BEE7" class="dark"><span class="shade">100</span><span class="color">#E1BEE7</span></li>
+    <li style="background: #CE93D8" class="dark"><span class="shade">200</span><span class="color">#CE93D8</span></li>
+    <li style="background: #BA68C8"><span class="shade">300</span><span class="color">#BA68C8</span></li>
+    <li style="background: #AB47BC"><span class="shade">400</span><span class="color">#AB47BC</span></li>
+    <li style="background: #9C27B0"><span class="shade">500</span><span class="color">#9C27B0</span></li>
+    <li style="background: #8E24AA"><span class="shade">600</span><span class="color">#8E24AA</span></li>
+    <li style="background: #7B1FA2"><span class="shade">700</span><span class="color">#7B1FA2</span></li>
+    <li style="background: #6A1B9A"><span class="shade">800</span><span class="color">#6A1B9A</span></li>
+    <li style="background: #4A148C"><span class="shade">900</span><span class="color">#4A148C</span></li>
+    <li style="background: #EA80FC" class="dark"><span class="shade">A100</span><span class="color">#EA80FC</span></li>
+    <li style="background: #E040FB"><span class="shade">A200</span><span class="color">#E040FB</span></li>
+    <li style="background: #D500F9"><span class="shade">A400</span><span class="color">#D500F9</span></li>
+    <li style="background: #AA00FF"><span class="shade">A700</span><span class="color">#AA00FF</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #673AB7"><span class="name">Deep Purple</span><span class="shade">500</span><span class="color">#673AB7</span></li>
+    <li style="background: #EDE7F6" class="dark"><span class="shade">50</span><span class="color">#EDE7F6</span></li>
+    <li style="background: #D1C4E9" class="dark"><span class="shade">100</span><span class="color">#D1C4E9</span></li>
+    <li style="background: #B39DDB" class="dark"><span class="shade">200</span><span class="color">#B39DDB</span></li>
+    <li style="background: #9575CD"><span class="shade">300</span><span class="color">#9575CD</span></li>
+    <li style="background: #7E57C2"><span class="shade">400</span><span class="color">#7E57C2</span></li>
+    <li style="background: #673AB7"><span class="shade">500</span><span class="color">#673AB7</span></li>
+    <li style="background: #5E35B1"><span class="shade">600</span><span class="color">#5E35B1</span></li>
+    <li style="background: #512DA8"><span class="shade">700</span><span class="color">#512DA8</span></li>
+    <li style="background: #4527A0"><span class="shade">800</span><span class="color">#4527A0</span></li>
+    <li style="background: #311B92"><span class="shade">900</span><span class="color">#311B92</span></li>
+    <li style="background: #B388FF" class="dark"><span class="shade">A100</span><span class="color">#B388FF</span></li>
+    <li style="background: #7C4DFF"><span class="shade">A200</span><span class="color">#7C4DFF</span></li>
+    <li style="background: #651FFF"><span class="shade">A400</span><span class="color">#651FFF</span></li>
+    <li style="background: #6200EA"><span class="shade">A700</span><span class="color">#6200EA</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #3F51B5"><span class="name">Indigo</span><span class="shade">500</span><span class="color">#3F51B5</span></li>
+    <li style="background: #E8EAF6" class="dark"><span class="shade">50</span><span class="color">#E8EAF6</span></li>
+    <li style="background: #C5CAE9" class="dark"><span class="shade">100</span><span class="color">#C5CAE9</span></li>
+    <li style="background: #9FA8DA" class="dark"><span class="shade">200</span><span class="color">#9FA8DA</span></li>
+    <li style="background: #7986CB"><span class="shade">300</span><span class="color">#7986CB</span></li>
+    <li style="background: #5C6BC0"><span class="shade">400</span><span class="color">#5C6BC0</span></li>
+    <li style="background: #3F51B5"><span class="shade">500</span><span class="color">#3F51B5</span></li>
+    <li style="background: #3949AB"><span class="shade">600</span><span class="color">#3949AB</span></li>
+    <li style="background: #303F9F"><span class="shade">700</span><span class="color">#303F9F</span></li>
+    <li style="background: #283593"><span class="shade">800</span><span class="color">#283593</span></li>
+    <li style="background: #1A237E"><span class="shade">900</span><span class="color">#1A237E</span></li>
+    <li style="background: #8C9EFF"><span class="shade">A100</span><span class="color">#8C9EFF</span></li>
+    <li style="background: #536DFE"><span class="shade">A200</span><span class="color">#536DFE</span></li>
+    <li style="background: #3D5AFE"><span class="shade">A400</span><span class="color">#3D5AFE</span></li>
+    <li style="background: #304FFE"><span class="shade">A700</span><span class="color">#304FFE</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #2196F3"><span class="name">Blue</span><span class="shade">500</span><span class="color">#2196F3</span></li>
+    <li style="background: #E3F2FD" class="dark"><span class="shade">50</span><span class="color">#E3F2FD</span></li>
+    <li style="background: #BBDEFB" class="dark"><span class="shade">100</span><span class="color">#BBDEFB</span></li>
+    <li style="background: #90CAF9" class="dark"><span class="shade">200</span><span class="color">#90CAF9</span></li>
+    <li style="background: #64B5F6" class="dark"><span class="shade">300</span><span class="color">#64B5F6</span></li>
+    <li style="background: #42A5F5" class="dark"><span class="shade">400</span><span class="color">#42A5F5</span></li>
+    <li style="background: #2196F3"><span class="shade">500</span><span class="color">#2196F3</span></li>
+    <li style="background: #1E88E5"><span class="shade">600</span><span class="color">#1E88E5</span></li>
+    <li style="background: #1976D2"><span class="shade">700</span><span class="color">#1976D2</span></li>
+    <li style="background: #1565C0"><span class="shade">800</span><span class="color">#1565C0</span></li>
+    <li style="background: #0D47A1"><span class="shade">900</span><span class="color">#0D47A1</span></li>
+    <li style="background: #82B1FF"><span class="shade">A100</span><span class="color">#82B1FF</span></li>
+    <li style="background: #448AFF"><span class="shade">A200</span><span class="color">#448AFF</span></li>
+    <li style="background: #2979FF"><span class="shade">A400</span><span class="color">#2979FF</span></li>
+    <li style="background: #2962FF"><span class="shade">A700</span><span class="color">#2962FF</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #03A9F4" class="dark"><span class="name">Light Blue</span><span class="shade">500</span><span class="color">#03A9F4</span></li>
+    <li style="background: #E1F5FE" class="dark"><span class="shade">50</span><span class="color">#E1F5FE</span></li>
+    <li style="background: #B3E5FC" class="dark"><span class="shade">100</span><span class="color">#B3E5FC</span></li>
+    <li style="background: #81D4FA" class="dark"><span class="shade">200</span><span class="color">#81D4FA</span></li>
+    <li style="background: #4FC3F7" class="dark"><span class="shade">300</span><span class="color">#4FC3F7</span></li>
+    <li style="background: #29B6F6" class="dark"><span class="shade">400</span><span class="color">#29B6F6</span></li>
+    <li style="background: #03A9F4" class="dark"><span class="shade">500</span><span class="color">#03A9F4</span></li>
+    <li style="background: #039BE5"><span class="shade">600</span><span class="color">#039BE5</span></li>
+    <li style="background: #0288D1"><span class="shade">700</span><span class="color">#0288D1</span></li>
+    <li style="background: #0277BD"><span class="shade">800</span><span class="color">#0277BD</span></li>
+    <li style="background: #01579B"><span class="shade">900</span><span class="color">#01579B</span></li>
+    <li style="background: #80D8FF" class="dark"><span class="shade">A100</span><span class="color">#80D8FF</span></li>
+    <li style="background: #40C4FF" class="dark"><span class="shade">A200</span><span class="color">#40C4FF</span></li>
+    <li style="background: #00B0FF" class="dark"><span class="shade">A400</span><span class="color">#00B0FF</span></li>
+    <li style="background: #0091EA"><span class="shade">A700</span><span class="color">#0091EA</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #00BCD4" class="dark"><span class="name">Cyan</span><span class="shade">500</span><span class="color">#00BCD4</span></li>
+    <li style="background: #E0F7FA" class="dark"><span class="shade">50</span><span class="color">#E0F7FA</span></li>
+    <li style="background: #B2EBF2" class="dark"><span class="shade">100</span><span class="color">#B2EBF2</span></li>
+    <li style="background: #80DEEA" class="dark"><span class="shade">200</span><span class="color">#80DEEA</span></li>
+    <li style="background: #4DD0E1" class="dark"><span class="shade">300</span><span class="color">#4DD0E1</span></li>
+    <li style="background: #26C6DA" class="dark"><span class="shade">400</span><span class="color">#26C6DA</span></li>
+    <li style="background: #00BCD4" class="dark"><span class="shade">500</span><span class="color">#00BCD4</span></li>
+    <li style="background: #00ACC1" class="dark"><span class="shade">600</span><span class="color">#00ACC1</span></li>
+    <li style="background: #0097A7"><span class="shade">700</span><span class="color">#0097A7</span></li>
+    <li style="background: #00838F"><span class="shade">800</span><span class="color">#00838F</span></li>
+    <li style="background: #006064"><span class="shade">900</span><span class="color">#006064</span></li>
+    <li style="background: #84FFFF" class="dark"><span class="shade">A100</span><span class="color">#84FFFF</span></li>
+    <li style="background: #18FFFF" class="dark"><span class="shade">A200</span><span class="color">#18FFFF</span></li>
+    <li style="background: #00E5FF" class="dark"><span class="shade">A400</span><span class="color">#00E5FF</span></li>
+    <li style="background: #00B8D4" class="dark"><span class="shade">A700</span><span class="color">#00B8D4</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #009688"><span class="name">Teal</span><span class="shade">500</span><span class="color">#009688</span></li>
+    <li style="background: #E0F2F1" class="dark"><span class="shade">50</span><span class="color">#E0F2F1</span></li>
+    <li style="background: #B2DFDB" class="dark"><span class="shade">100</span><span class="color">#B2DFDB</span></li>
+    <li style="background: #80CBC4" class="dark"><span class="shade">200</span><span class="color">#80CBC4</span></li>
+    <li style="background: #4DB6AC" class="dark"><span class="shade">300</span><span class="color">#4DB6AC</span></li>
+    <li style="background: #26A69A" class="dark"><span class="shade">400</span><span class="color">#26A69A</span></li>
+    <li style="background: #009688"><span class="shade">500</span><span class="color">#009688</span></li>
+    <li style="background: #00897B"><span class="shade">600</span><span class="color">#00897B</span></li>
+    <li style="background: #00796B"><span class="shade">700</span><span class="color">#00796B</span></li>
+    <li style="background: #00695C"><span class="shade">800</span><span class="color">#00695C</span></li>
+    <li style="background: #004D40"><span class="shade">900</span><span class="color">#004D40</span></li>
+    <li style="background: #A7FFEB" class="dark"><span class="shade">A100</span><span class="color">#A7FFEB</span></li>
+    <li style="background: #64FFDA" class="dark"><span class="shade">A200</span><span class="color">#64FFDA</span></li>
+    <li style="background: #1DE9B6" class="dark"><span class="shade">A400</span><span class="color">#1DE9B6</span></li>
+    <li style="background: #00BFA5" class="dark"><span class="shade">A700</span><span class="color">#00BFA5</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #4CAF50" class="dark"><span class="name">Green</span><span class="shade">500</span><span class="color">#4CAF50</span></li>
+    <li style="background: #E8F5E9" class="dark"><span class="shade">50</span><span class="color">#E8F5E9</span></li>
+    <li style="background: #C8E6C9" class="dark"><span class="shade">100</span><span class="color">#C8E6C9</span></li>
+    <li style="background: #A5D6A7" class="dark"><span class="shade">200</span><span class="color">#A5D6A7</span></li>
+    <li style="background: #81C784" class="dark"><span class="shade">300</span><span class="color">#81C784</span></li>
+    <li style="background: #66BB6A" class="dark"><span class="shade">400</span><span class="color">#66BB6A</span></li>
+    <li style="background: #4CAF50" class="dark"><span class="shade">500</span><span class="color">#4CAF50</span></li>
+    <li style="background: #43A047"><span class="shade">600</span><span class="color">#43A047</span></li>
+    <li style="background: #388E3C"><span class="shade">700</span><span class="color">#388E3C</span></li>
+    <li style="background: #2E7D32"><span class="shade">800</span><span class="color">#2E7D32</span></li>
+    <li style="background: #1B5E20"><span class="shade">900</span><span class="color">#1B5E20</span></li>
+    <li style="background: #B9F6CA" class="dark"><span class="shade">A100</span><span class="color">#B9F6CA</span></li>
+    <li style="background: #69F0AE" class="dark"><span class="shade">A200</span><span class="color">#69F0AE</span></li>
+    <li style="background: #00E676" class="dark"><span class="shade">A400</span><span class="color">#00E676</span></li>
+    <li style="background: #00C853" class="dark"><span class="shade">A700</span><span class="color">#00C853</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #8BC34A" class="dark"><span class="name">Light Green</span><span class="shade">500</span><span class="color">#8BC34A</span></li>
+    <li style="background: #F1F8E9" class="dark"><span class="shade">50</span><span class="color">#F1F8E9</span></li>
+    <li style="background: #DCEDC8" class="dark"><span class="shade">100</span><span class="color">#DCEDC8</span></li>
+    <li style="background: #C5E1A5" class="dark"><span class="shade">200</span><span class="color">#C5E1A5</span></li>
+    <li style="background: #AED581" class="dark"><span class="shade">300</span><span class="color">#AED581</span></li>
+    <li style="background: #9CCC65" class="dark"><span class="shade">400</span><span class="color">#9CCC65</span></li>
+    <li style="background: #8BC34A" class="dark"><span class="shade">500</span><span class="color">#8BC34A</span></li>
+    <li style="background: #7CB342" class="dark"><span class="shade">600</span><span class="color">#7CB342</span></li>
+    <li style="background: #689F38"><span class="shade">700</span><span class="color">#689F38</span></li>
+    <li style="background: #558B2F"><span class="shade">800</span><span class="color">#558B2F</span></li>
+    <li style="background: #33691E"><span class="shade">900</span><span class="color">#33691E</span></li>
+    <li style="background: #CCFF90" class="dark"><span class="shade">A100</span><span class="color">#CCFF90</span></li>
+    <li style="background: #B2FF59" class="dark"><span class="shade">A200</span><span class="color">#B2FF59</span></li>
+    <li style="background: #76FF03" class="dark"><span class="shade">A400</span><span class="color">#76FF03</span></li>
+    <li style="background: #64DD17" class="dark"><span class="shade">A700</span><span class="color">#64DD17</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #CDDC39" class="dark"><span class="name">Lime</span><span class="shade">500</span><span class="color">#CDDC39</span></li>
+    <li style="background: #F9FBE7" class="dark"><span class="shade">50</span><span class="color">#F9FBE7</span></li>
+    <li style="background: #F0F4C3" class="dark"><span class="shade">100</span><span class="color">#F0F4C3</span></li>
+    <li style="background: #E6EE9C" class="dark"><span class="shade">200</span><span class="color">#E6EE9C</span></li>
+    <li style="background: #DCE775" class="dark"><span class="shade">300</span><span class="color">#DCE775</span></li>
+    <li style="background: #D4E157" class="dark"><span class="shade">400</span><span class="color">#D4E157</span></li>
+    <li style="background: #CDDC39" class="dark"><span class="shade">500</span><span class="color">#CDDC39</span></li>
+    <li style="background: #C0CA33" class="dark"><span class="shade">600</span><span class="color">#C0CA33</span></li>
+    <li style="background: #AFB42B" class="dark"><span class="shade">700</span><span class="color">#AFB42B</span></li>
+    <li style="background: #9E9D24" class="dark"><span class="shade">800</span><span class="color">#9E9D24</span></li>
+    <li style="background: #827717"><span class="shade">900</span><span class="color">#827717</span></li>
+    <li style="background: #F4FF81" class="dark"><span class="shade">A100</span><span class="color">#F4FF81</span></li>
+    <li style="background: #EEFF41" class="dark"><span class="shade">A200</span><span class="color">#EEFF41</span></li>
+    <li style="background: #C6FF00" class="dark"><span class="shade">A400</span><span class="color">#C6FF00</span></li>
+    <li style="background: #AEEA00" class="dark"><span class="shade">A700</span><span class="color">#AEEA00</span></li>
+  </ul>
+
+  <ul class="dark">
+    <li style="background: #FFEB3B"><span class="name">Yellow</span><span class="shade">500</span><span class="color">#FFEB3B</span></li>
+    <li style="background: #FFFDE7"><span class="shade">50</span><span class="color">#FFFDE7</span></li>
+    <li style="background: #FFF9C4"><span class="shade">100</span><span class="color">#FFF9C4</span></li>
+    <li style="background: #FFF59D"><span class="shade">200</span><span class="color">#FFF59D</span></li>
+    <li style="background: #FFF176"><span class="shade">300</span><span class="color">#FFF176</span></li>
+    <li style="background: #FFEE58"><span class="shade">400</span><span class="color">#FFEE58</span></li>
+    <li style="background: #FFEB3B"><span class="shade">500</span><span class="color">#FFEB3B</span></li>
+    <li style="background: #FDD835"><span class="shade">600</span><span class="color">#FDD835</span></li>
+    <li style="background: #FBC02D"><span class="shade">700</span><span class="color">#FBC02D</span></li>
+    <li style="background: #F9A825"><span class="shade">800</span><span class="color">#F9A825</span></li>
+    <li style="background: #F57F17"><span class="shade">900</span><span class="color">#F57F17</span></li>
+    <li style="background: #FFFF8D"><span class="shade">A100</span><span class="color">#FFFF8D</span></li>
+    <li style="background: #FFFF00"><span class="shade">A200</span><span class="color">#FFFF00</span></li>
+    <li style="background: #FFEA00"><span class="shade">A400</span><span class="color">#FFEA00</span></li>
+    <li style="background: #FFD600"><span class="shade">A700</span><span class="color">#FFD600</span></li>
+  </ul>
+
+  <ul class="dark">
+    <li style="background: #FFC107"><span class="name">Amber</span><span class="shade">500</span><span class="color">#FFC107</span></li>
+    <li style="background: #FFF8E1"><span class="shade">50</span><span class="color">#FFF8E1</span></li>
+    <li style="background: #FFECB3"><span class="shade">100</span><span class="color">#FFECB3</span></li>
+    <li style="background: #FFE082"><span class="shade">200</span><span class="color">#FFE082</span></li>
+    <li style="background: #FFD54F"><span class="shade">300</span><span class="color">#FFD54F</span></li>
+    <li style="background: #FFCA28"><span class="shade">400</span><span class="color">#FFCA28</span></li>
+    <li style="background: #FFC107"><span class="shade">500</span><span class="color">#FFC107</span></li>
+    <li style="background: #FFB300"><span class="shade">600</span><span class="color">#FFB300</span></li>
+    <li style="background: #FFA000"><span class="shade">700</span><span class="color">#FFA000</span></li>
+    <li style="background: #FF8F00"><span class="shade">800</span><span class="color">#FF8F00</span></li>
+    <li style="background: #FF6F00"><span class="shade">900</span><span class="color">#FF6F00</span></li>
+    <li style="background: #FFE57F"><span class="shade">A100</span><span class="color">#FFE57F</span></li>
+    <li style="background: #FFD740"><span class="shade">A200</span><span class="color">#FFD740</span></li>
+    <li style="background: #FFC400"><span class="shade">A400</span><span class="color">#FFC400</span></li>
+    <li style="background: #FFAB00"><span class="shade">A700</span><span class="color">#FFAB00</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #FF9800" class="dark"><span class="name">Orange</span><span class="shade">500</span><span class="color">#FF9800</span></li>
+    <li style="background: #FFF3E0" class="dark"><span class="shade">50</span><span class="color">#FFF3E0</span></li>
+    <li style="background: #FFE0B2" class="dark"><span class="shade">100</span><span class="color">#FFE0B2</span></li>
+    <li style="background: #FFCC80" class="dark"><span class="shade">200</span><span class="color">#FFCC80</span></li>
+    <li style="background: #FFB74D" class="dark"><span class="shade">300</span><span class="color">#FFB74D</span></li>
+    <li style="background: #FFA726" class="dark"><span class="shade">400</span><span class="color">#FFA726</span></li>
+    <li style="background: #FF9800" class="dark"><span class="shade">500</span><span class="color">#FF9800</span></li>
+    <li style="background: #FB8C00" class="dark"><span class="shade">600</span><span class="color">#FB8C00</span></li>
+    <li style="background: #F57C00" class="dark"><span class="shade">700</span><span class="color">#F57C00</span></li>
+    <li style="background: #EF6C00"><span class="shade">800</span><span class="color">#EF6C00</span></li>
+    <li style="background: #E65100"><span class="shade">900</span><span class="color">#E65100</span></li>
+    <li style="background: #FFD180" class="dark"><span class="shade">A100</span><span class="color">#FFD180</span></li>
+    <li style="background: #FFAB40" class="dark"><span class="shade">A200</span><span class="color">#FFAB40</span></li>
+    <li style="background: #FF9100" class="dark"><span class="shade">A400</span><span class="color">#FF9100</span></li>
+    <li style="background: #FF6D00" class="dark"><span class="shade">A700</span><span class="color">#FF6D00</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #FF5722"><span class="name">Deep Orange</span><span class="shade">500</span><span class="color">#FF5722</span></li>
+    <li style="background: #FBE9E7" class="dark"><span class="shade">50</span><span class="color">#FBE9E7</span></li>
+    <li style="background: #FFCCBC" class="dark"><span class="shade">100</span><span class="color">#FFCCBC</span></li>
+    <li style="background: #FFAB91" class="dark"><span class="shade">200</span><span class="color">#FFAB91</span></li>
+    <li style="background: #FF8A65" class="dark"><span class="shade">300</span><span class="color">#FF8A65</span></li>
+    <li style="background: #FF7043" class="dark"><span class="shade">400</span><span class="color">#FF7043</span></li>
+    <li style="background: #FF5722"><span class="shade">500</span><span class="color">#FF5722</span></li>
+    <li style="background: #F4511E"><span class="shade">600</span><span class="color">#F4511E</span></li>
+    <li style="background: #E64A19"><span class="shade">700</span><span class="color">#E64A19</span></li>
+    <li style="background: #D84315"><span class="shade">800</span><span class="color">#D84315</span></li>
+    <li style="background: #BF360C"><span class="shade">900</span><span class="color">#BF360C</span></li>
+    <li style="background: #FF9E80" class="dark"><span class="shade">A100</span><span class="color">#FF9E80</span></li>
+    <li style="background: #FF6E40" class="dark"><span class="shade">A200</span><span class="color">#FF6E40</span></li>
+    <li style="background: #FF3D00"><span class="shade">A400</span><span class="color">#FF3D00</span></li>
+    <li style="background: #DD2C00"><span class="shade">A700</span><span class="color">#DD2C00</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #795548"><span class="name">Brown</span><span class="shade">500</span><span class="color">#795548</span></li>
+    <li style="background: #EFEBE9" class="dark"><span class="shade">50</span><span class="color">#EFEBE9</span></li>
+    <li style="background: #D7CCC8" class="dark"><span class="shade">100</span><span class="color">#D7CCC8</span></li>
+    <li style="background: #BCAAA4" class="dark"><span class="shade">200</span><span class="color">#BCAAA4</span></li>
+    <li style="background: #A1887F"><span class="shade">300</span><span class="color">#A1887F</span></li>
+    <li style="background: #8D6E63"><span class="shade">400</span><span class="color">#8D6E63</span></li>
+    <li style="background: #795548"><span class="shade">500</span><span class="color">#795548</span></li>
+    <li style="background: #6D4C41"><span class="shade">600</span><span class="color">#6D4C41</span></li>
+    <li style="background: #5D4037"><span class="shade">700</span><span class="color">#5D4037</span></li>
+    <li style="background: #4E342E"><span class="shade">800</span><span class="color">#4E342E</span></li>
+    <li style="background: #3E2723"><span class="shade">900</span><span class="color">#3E2723</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #9E9E9E" class="dark"><span class="name">Grey</span><span class="shade">500</span><span class="color">#9E9E9E</span></li>
+    <li style="background: #FAFAFA" class="dark"><span class="shade">50</span><span class="color">#FAFAFA</span></li>
+    <li style="background: #F5F5F5" class="dark"><span class="shade">100</span><span class="color">#F5F5F5</span></li>
+    <li style="background: #EEEEEE" class="dark"><span class="shade">200</span><span class="color">#EEEEEE</span></li>
+    <li style="background: #E0E0E0" class="dark"><span class="shade">300</span><span class="color">#E0E0E0</span></li>
+    <li style="background: #BDBDBD" class="dark"><span class="shade">400</span><span class="color">#BDBDBD</span></li>
+    <li style="background: #9E9E9E" class="dark"><span class="shade">500</span><span class="color">#9E9E9E</span></li>
+    <li style="background: #757575"><span class="shade">600</span><span class="color">#757575</span></li>
+    <li style="background: #616161"><span class="shade">700</span><span class="color">#616161</span></li>
+    <li style="background: #424242"><span class="shade">800</span><span class="color">#424242</span></li>
+    <li style="background: #212121"><span class="shade">900</span><span class="color">#212121</span></li>
+  </ul>
+
+  <ul>
+    <li style="background: #607D8B"><span class="name">Blue Grey</span><span class="shade">500</span><span class="color">#607D8B</span></li>
+    <li style="background: #ECEFF1" class="dark"><span class="shade">50</span><span class="color">#ECEFF1</span></li>
+    <li style="background: #CFD8DC" class="dark"><span class="shade">100</span><span class="color">#CFD8DC</span></li>
+    <li style="background: #B0BEC5" class="dark"><span class="shade">200</span><span class="color">#B0BEC5</span></li>
+    <li style="background: #90A4AE" class="dark"><span class="shade">300</span><span class="color">#90A4AE</span></li>
+    <li style="background: #78909C"><span class="shade">400</span><span class="color">#78909C</span></li>
+    <li style="background: #607D8B"><span class="shade">500</span><span class="color">#607D8B</span></li>
+    <li style="background: #546E7A"><span class="shade">600</span><span class="color">#546E7A</span></li>
+    <li style="background: #455A64"><span class="shade">700</span><span class="color">#455A64</span></li>
+    <li style="background: #37474F"><span class="shade">800</span><span class="color">#37474F</span></li>
+    <li style="background: #263238"><span class="shade">900</span><span class="color">#263238</span></li>
+  </ul>
+</div>

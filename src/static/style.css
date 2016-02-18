@@ -14,87 +14,108 @@ html, body {
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
     line-height: 1.42;
-    color: #CFD8DC;
-    background-color: #37474F;
 }
-a {
-    color: #ffffff;
+header h1 {
+    float: left;
+    font-size: 1.3em;
+    padding: 7px 0 0 10px;
+}
+header #menu {
+    padding: 15px 10px 0 0;
+    float: right;
+}
+header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 40px;
+    border-bottom: solid 2px #E0E0E0;
+    opacity: 0.95;
+}
+.anchor {
     text-decoration: none;
 }
-a:hover {
+.anchor:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
 
 /* left side menu */
-#list {
-    width: 200px;
+#sidebar {
+    width: 80%;
     height: 100%;
     float: left;
+    background: #ffffff;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    opacity: 0.95;
+    display: none;
+    border-top: solid 1px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
 }
-#list ul li {
-    border-bottom: solid 1px #546E7A;
+#sidebar_list {
 }
-#list ul li a {
-    display: block;
-    width: 100%;
+#sidebar_list li {
+    border-bottom: solid 1px #E0E0E0;
+    padding: 10px 0 10px 10px;
 }
-#list ul li a .inner {
-    padding: 15px 20px;
+#sidebar_list li.current {
+    background: #F5F5F5;
 }
-#list strong {
-    color: #ECEFF1;
-    font-weight: normal;
-    display: block;
-    padding-bottom: 5px;
-}
-#list .date {
-    font-size: 0.9em;
-    color: #B0BEC5;
-}
-#list ul li:hover {
-    background-color: #455A64;
-}
-
 
 /* right document */
 #note {
-    height: 100%;
-    margin-left: 200px;
-    border-left: solid 1px #546E7A;
+    padding: 50px 10px 0;
+    clear: both;
 }
-#note .markdown {
-    padding: 0 20px;
-}
-.markdown h1 {
+#note h1 {
     font-size: 1.3em;
     padding-top: 15px;
 }
-.markdown h2 {
+#note h2 {
     font-size: 1.2em;
     padding-top: 40px;
 }
-.markdown h3 {
+#note h3 {
     font-size: 1.1em;
     padding-top: 30px;
 }
-.markdown h4,
-.markdown h5,
-.markdown h6 {
+#note h4,
+#note h5,
+#note h6 {
     padding-top: 30px;
     font-size: 1em;
 }
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
+#note h1,
+#note h2,
+#note h3,
+#note h4,
+#note h5,
+#note h6 {
+    padding-left: 10px;
     font-weight: normal;
     margin-bottom: 10px;
     padding-bottom: 5px;
-    border-bottom: solid 2px #546E7A;
+    border-bottom: solid 2px #E0E0E0;
 }
-.markdown p {
+#note p {
     padding-bottom: 10px;
+}
+#note code {
+    display: block;
+    background: #ECEFF1;
+    margin: 10px 0;
+    padding: 7px 10px;
+}
+#note table {
+}
+#note table th {
+    padding: 10px 0 5px;
+    border-bottom: solid 1px #ECEFF1;
+}
+#note table td {
+    padding: 5px 0;
+    border-bottom: solid 1px #ECEFF1;
 }

@@ -1,0 +1,79 @@
+:format markdown
+:title markdownのテスト
+
+# 見出しh1
+## 見出しh2
+### 見出しh3
+#### 見出しh4
+##### 見出しh5
+###### 見出しh6
+
+```
+function hellow(){
+    　return "hello world!";
+}
+```
+
+```php
+function hellow(){
+    　return "hello world!";
+}
+```
+
+```php:hello.php
+function hellow(){
+    　return "hello world!";
+}
+```
+
+[Qiita](http://qiita.com/)
+
+![Qiita](http://cdn.qiita.com/assets/siteid-reverse-6044901aace6435306ebd1fac6b7858c.png)
+
+![Qiita](http://cdn.qiita.com/assets/siteid-reverse-6044901aace6435306ebd1fac6b7858c.png　"キータ")
+
+>を書くだけです。
+>引用文です
+>>ネストです
+
+
+_イタリック_
+*イタリック*
+__太字__
+**太字**
+
+* 順序なしリスト
++ 順序なしリスト
+- 順序なしリスト
+
+定義1: 値1
+定義2: 値2
+定義3: 値3
+
+リスト1
+リスト2
+
+水平線
+***
+* * *
+---
+- - -
+
+テーブル
+
+|ここに|項目を|入れます|
+|:-|-:|:-:|
+|ここから|テキストを|入れていきます|
+|昨日|今日|明日|
+|ボールペン|シャープペン|万年筆|
+|iPhone|iPad|MacBook|
+|テキストがながーくなっても|大丈夫なように出来ているので|レスポンシブでも安心|
+
+エスケープ
+
+\#見出しh1
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
+\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
