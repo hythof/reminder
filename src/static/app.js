@@ -1,4 +1,9 @@
 var trace = console.log.bind(window.console);
+var vendor = {
+    markdown: marked,
+    graphviz: Viz
+};
+
 
 var App = function(ui) {
     this.ui = ui;
@@ -13,7 +18,7 @@ App.prototype.init = function(data) {
     }
     this.notes = notes;
     this.ui.change({
-        current: notes[2],
+        current: notes[notes.length - 1],
         notes: notes
     });
 }
@@ -44,22 +49,19 @@ var UI = function() {
         191: function() { me.change({sidebar: true}); }, // key of '/'
         'j': function() { me.state.sidebar ? me.change({current: me.nextNote()}) : 0; },
         'k': function() { me.state.sidebar ? me.change({current: me.prevNote()}) : 0; },
-        'l': function() { me.state.sidebar ? me.change({sidebar: true})          : 0; },
-        'h': function() { me.state.sidebar ? me.change({sidebar: false})         : 0; }
+        'l': function() { me.change({sidebar: true}); },
+        'h': function() { me.change({sidebar: false}); }
     });
 }
 UI.prototype.change = function(newState) {
-    var modified = {};
+    var modify = false;
     for(var key in newState) {
         var value = newState[key];
-        var modify = this.state[key] != value;
-        if(modify) {
-            modified[key] = value;
-        }
+        var modify = modify || this.state[key] != value;
         this.state[key] = value;
     }
-    if(modified) {
-        trace("change ui state", modified);
+    if(modify) {
+        trace("change ui state", newState);
         this.render();
     }
 };
@@ -172,9 +174,11 @@ function parse_html(format, body) {
     if(format == 'html') {
         return body;
     } else if(format == 'markdown') {
-        return marked(body); // vendor
+        return vendor.markdown(body); // vendor
     } else if(format == 'text') {
         return '<pre>' + body + '</pre>';
+    } else if(format == 'graphviz') {
+        return vendor.graphviz(body); // vendor
     } else {
         // fallback
         return '<pre>' + body + '</pre>' + '<span class="warning">unknown format=' + format + '</span>';
@@ -217,15 +221,15 @@ function keyCode(e){
 }
 // vendor
 marked.setOptions({
-  renderer: new marked.Renderer(),
-  gfm: true,
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  sanitize: true,
-  smartLists: true,
-  smartypants: false,
-  highlight: function (code, lang, callback) {
-    return code;
-  }
+    renderer: new marked.Renderer(),
+    gfm: true,
+    tables: true,
+    breaks: false,
+    pedantic: false,
+    sanitize: true,
+    smartLists: true,
+    smartypants: false,
+    highlight: function (code, lang) {
+        return code;
+    }
 });

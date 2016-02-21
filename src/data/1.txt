@@ -1,8 +1,10 @@
-:format html
-:title Color code from Google Material Design
+,format html
+:title Color Code from Google Material Design
 
 <style>
-/* color-block */
+.color-block {
+    color: #ffffff;
+}
 .color-block ul {
     float: left;
     margin: 15px 10px 50px 10px;

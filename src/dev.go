@@ -15,6 +15,7 @@ var (
 )
 
 func main() {
+	fmt.Printf("listen: 0.0.0.0:%d\n", port)
 	http.HandleFunc("/api/get", routeGet)
 	http.HandleFunc("/", routeIndex)
 
