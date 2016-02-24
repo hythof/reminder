@@ -28,6 +28,7 @@ var UI = function() {
     var me = this;
     this.state = {
         sidebar: false,
+        connection: 0,
         notes: [],
         current: new Note()
     };
@@ -36,6 +37,7 @@ var UI = function() {
     this.dom = {
         title: document.getElementById('title'),
         note: document.getElementById('note'),
+        loading: document.getElementById('loading'),
         sidebar: document.getElementById('sidebar'),
         sidebar_list: document.getElementById('sidebar_list')
     };
@@ -84,6 +86,7 @@ UI.prototype.render = function() {
     document.title = 'pad | ' + current.title;
     dom.title.innerText = current.title;
     dom.note.innerHTML = current.html;
+    dom.loading.style.display = state.connection > 0 ? 'block' : 'none';
     dom.sidebar.style.display = state.sidebar ? 'block' : 'none';
     if(state.sidebar) {
         // todo benchmark
@@ -141,9 +144,16 @@ var Note = function(text) {
 
 function init() {
     var ui = new UI();
-    ui.render();
 
     window.app = new App(ui);
+    Ajax.onRequest = function() {
+        ui.change({connection: ui.state.connection + 1});
+        ui.render();
+    };
+    Ajax.onResponse = function() {
+        ui.change({connection: ui.state.connection - 1});
+        ui.render();
+    };
     Ajax.get('api/get', function(response) {
         if(response.success) {
             app.init(response.json);

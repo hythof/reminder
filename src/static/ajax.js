@@ -1,4 +1,6 @@
 var Ajax = {
+    onRequest: function(){},
+    onResponse: function(){},
     base: { 
         endpoint: '/',
         timeout: 10 * 1000,
@@ -35,21 +37,21 @@ var Ajax = {
             }
         };
         var success = function(json) {
-console.log("success")
             response.success = true;
             response.status = 200;
             response.json = json;
             callback(response);
+            Ajax.onResponse(response);
         };
         var timeout = function() {
-console.log("timeout")
             response.timeout = true;
             callback(response);
+            Ajax.onResponse(response);
         }
         var failure = function(status) {
-console.log("failure")
             response.status = status;
             callback(response);
+            Ajax.onResponse(response);
         }
 
         // send XMLHttpRequest
@@ -95,6 +97,11 @@ console.log("failure")
         } else {
             xhr.send('');
         }
+        Ajax.onRequest({
+            method: method,
+            path: path,
+            option: option
+        });
 
         setTimeout(function() {
             if(xhr.readyState != 4) {
