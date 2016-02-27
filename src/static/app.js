@@ -1,9 +1,43 @@
 var trace = console.log.bind(window.console);
-var vendor = {
-    markdown: marked,
-    graphviz: Viz
+var lazy = function(name, onload) {
+    function check(loaded) {
+        var obj = window[name];
+        if(obj) {
+            loaded(obj);
+        } else {
+            setTimeout(function() {
+                check(loaded);
+            }, 100);
+        }
+    }
+    return function (loading, loaded) {
+        var obj = window[name];
+        if(obj) {
+            loaded(obj);
+        } else {
+            loading();
+            check(loaded);
+        }
+    };
 };
-
+var vendor = {
+    graphviz: lazy('Viz'),
+    markdown: lazy('marked', function(marked) {
+        marked.setOptions({
+            renderer: new marked.Renderer(),
+            gfm: true,
+            tables: true,
+            breaks: false,
+            pedantic: false,
+            sanitize: true,
+            smartLists: true,
+            smartypants: false,
+            highlight: function (code, lang) {
+                return code;
+            }
+        });
+    })
+};
 
 var App = function(ui) {
     this.ui = ui;
@@ -12,13 +46,14 @@ var App = function(ui) {
 App.prototype.init = function(data) {
     var notes = [];
     var len = data.texts.length;
+    var modify = this.ui.modify.bind(this.ui);
     for(var i=0; i<len; ++i) {
-        notes[i] = new Note(data.texts[i]);
+        notes[i] = new Note(data.texts[i], modify);
         notes[i].index = i;
     }
     this.notes = notes;
     this.ui.change({
-        current: notes[notes.length - 1],
+        current: notes[2],
         notes: notes
     });
 }
@@ -77,6 +112,14 @@ UI.prototype.prevNote = function() {
     var current = this.state.current;
     return current.index > 0 ? notes[current.index - 1] : current;
 }
+UI.prototype.modify = function() {
+    if(this.render_reserve) {
+        return;
+    }
+    this.render_reserve = true;
+    var f = this.render.bind(this);
+    setTimeout(f, 1);
+};
 UI.prototype.render = function() {
     var me = this;
     var state = this.state;
@@ -125,7 +168,7 @@ UI.prototype._click = function(id, func) {
     }, false);
 }
 
-var Note = function(text) {
+var Note = function(text, onModify) {
     if(text) {
         var pos = text.indexOf('\n\n');
         var head = text.slice(0, pos);
@@ -133,12 +176,39 @@ var Note = function(text) {
         var header = parse_header(head);
 
         this.title = header.title || '(no title)';
-        this.html = parse_html(header.format || 'text', body);
         this.text = text;
+        this.set_html(header.format || 'text', body);
     } else {
         this.title = '(no title)';
-        this.html = '';
         this.text = '';
+        this.html = '';
+    }
+    this.onModify = onModify || function(){};
+}
+Note.prototype.set_html = function(format, body) {
+    var note = this;
+    var loading = '<div class="lazy_loading"><pre>' + body + '</pre></div>';
+    if(format == 'html') {
+        this.html = body;
+    } else if(format == 'markdown') {
+        vendor.markdown(function(){
+            note.html = loading;
+        }, function(f){
+            note.html = f(body);
+            note.onModify();
+        });
+    } else if(format == 'graphviz') {
+        vendor.graphviz(function(){
+            note.html = loading;
+        }, function(f){
+            note.html = f(body);
+            note.onModify();
+        });
+    } else if(format == 'text') {
+        this.html = '<pre>' + body + '</pre>';
+    } else {
+        // fallback
+        this.html = '<pre>' + body + '</pre>' + '<span class="warning">unknown format=' + format + '</span>';
     }
 }
 
@@ -164,7 +234,7 @@ function init() {
         }
     });
 }
-window.addEventListener('load', init)
+document.addEventListener('DOMContentLoaded', init)
 
 // utility
 function parse_header(text) {
@@ -180,20 +250,8 @@ function parse_header(text) {
     }
     return header;
 }
-function parse_html(format, body) {
-    if(format == 'html') {
-        return body;
-    } else if(format == 'markdown') {
-        return vendor.markdown(body); // vendor
-    } else if(format == 'text') {
-        return '<pre>' + body + '</pre>';
-    } else if(format == 'graphviz') {
-        return vendor.graphviz(body); // vendor
-    } else {
-        // fallback
-        return '<pre>' + body + '</pre>' + '<span class="warning">unknown format=' + format + '</span>';
-    }
-}
+
+// keyboard shortcut
 function keymap(dict) {
     var map = {};
     for(var key in dict) {
@@ -229,17 +287,3 @@ function keyCode(e){
         return e.which;
     }
 }
-// vendor
-marked.setOptions({
-    renderer: new marked.Renderer(),
-    gfm: true,
-    tables: true,
-    breaks: false,
-    pedantic: false,
-    sanitize: true,
-    smartLists: true,
-    smartypants: false,
-    highlight: function (code, lang) {
-        return code;
-    }
-});

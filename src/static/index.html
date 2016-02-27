@@ -2,16 +2,19 @@
 <html>
 <head>
     <title>タイトル</title>
-    <script src="vendors/viz.js"></script>
-    <script src="vendors/marked.min.js"></script>
-    <script src="ajax.js"></script>
+    <script defer src="ajax.js"></script>
     <script src="app.js"></script>
+    <script async defer src="vendors/viz.js"></script>
+    <script async defer src="vendors/marked.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="title">loading...</h1>
-        <span id="menu" class="anchor">メニュー</span>
+        <div class="content">
+            <h1 id="title">loading...</h1>
+            <span id="menu" class="anchor">メニュー</span>
+        </div>
+        <div class="background"></div>
     </header>
 
     <div id="note">
