@@ -1,4 +1,4 @@
-,format html
+:format html
 :title Color Code from Google Material Design
 
 <style>

@@ -1,5 +1,5 @@
 run:
-	(cd src/frontend && go run ../main.go)
+	cd src && go run main.go httpd
 
 update:
 	git submodule update -i
