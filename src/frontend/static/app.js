@@ -169,6 +169,7 @@ UI.prototype._click = function(id, func) {
 }
 
 var Note = function(text, onModify) {
+    this.onModify = onModify || function(){};
     if(text) {
         var pos = text.indexOf('\n\n');
         var head = text.slice(0, pos);
@@ -183,7 +184,6 @@ var Note = function(text, onModify) {
         this.text = '';
         this.html = '';
     }
-    this.onModify = onModify || function(){};
 }
 Note.prototype.set_html = function(format, body) {
     var note = this;
