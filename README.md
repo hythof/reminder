@@ -21,6 +21,7 @@
 # how
 - WebサーバとWebブラウザで実現
 - 更新はstorageを直接触る
+- PC間同期はgit
 
 browser : chrome
 api     : golang server
